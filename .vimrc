@@ -42,6 +42,8 @@ Plug  'wesleyche/SrcExpl'
 
 Plug  'flazz/vim-colorschemes'
 
+Plug 'ashfinal/vim-colors-violet'
+
 call plug#end()
 
 "---------NERDTree----------------------------
@@ -109,7 +111,7 @@ let g:ctrlp_extensions = ['funky']
 
 
 if has("cscope")
-	set csprg=/usr/local/bin/cscope
+	set csprg=/usr/bin/cscope
 	set csto=0
 	set cst
 	set nocsverb
@@ -142,7 +144,7 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 if has("syntax")
 syntax on            " 语法高亮
 endif
-colorscheme solarized        " elflord ron peachpuff default 设置配色方案，vim自带的配色方案保存在/usr/share/vim/vim72/colors目录下
+colorscheme solarized  " elflord ron peachpuff default 设置配色方案，vim自带的配色方案保存在/usr/share/vim/vim72/colors目录下
 
 " detect file type
 filetype on
